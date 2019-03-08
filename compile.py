@@ -72,43 +72,43 @@ with open('train.p', 'wb') as handle:
 with open('yset.p', 'wb') as handle:
     pickle.dump(ySet, handle, protocol=pickle.HIGHEST_PROTOCOL)
 
-# with open('train.p', 'rb') as handle:
-#     b = pickle.load(handle)
+with open('train.p', 'rb') as handle:
+    b = pickle.load(handle)
 
-# print(dataSet)
-# create merchants file
-# with open('merchants.csv') as tempFile:
-#     tempReader = csv.reader(tempFile)
-#     for row in tempReader:
-#         if rowsMerch != 0:
-#             # do this
-#             merchantDetails.update(row[0]:[row[1], row[2], row[3], row[4], row[5],
-#             row[6], row[7], row[8], row[9], row[10], row[11], row[12], row[13],
-#             row[14], row[15], row[16], row[17], row[18], row[19], row[20], row[21],])
-#         rowsMerch += 1
-    
-# create histTrans
-# with open('historical_transactions.csv') as tempFile:
-#     tempReader = csv.reader(tempFile)
-#     for row in tempReader:
-#         if rowsHist != 0:
-#             if row[0] == 'Y':
-#                 row[0] = 1
-#             else:
-#                 row[0] = 0
-            
+print(dataSet)
+create merchants file
+with open('merchants.csv') as tempFile:
+    tempReader = csv.reader(tempFile)
+    for row in tempReader:
+        if rowsMerch != 0:
+            # do this
+            merchantDetails.update(row[0]:[row[1], row[2], row[3], row[4], row[5],
+            row[6], row[7], row[8], row[9], row[10], row[11], row[12], row[13],
+            row[14], row[15], row[16], row[17], row[18], row[19], row[20], row[21],])
+        rowsMerch += 1
+  
+create histTrans
+with open('historical_transactions.csv') as tempFile:
+    tempReader = csv.reader(tempFile)
+    for row in tempReader:
+        if rowsHist != 0:
+            if row[0] == 'Y':
+                row[0] = 1
+            else:
+                row[0] = 0
+          
 
 
-#         rowsHist +=1    
-# for row in histTrans:
-#     rows += 1
-#     # print(row)
-# print(rows)
-# print(histTrans)
-# create newMerchTrans
-# with open('new_merchant_transactions.csv') as tempFile:
-#     tempReader = csv.reader(tempFile)
-#     newMerchTrans = list(tempReader)
+        rowsHist +=1    
+for row in histTrans:
+    rows += 1
+    # print(row)
+print(rows)
+print(histTrans)
+create newMerchTrans
+with open('new_merchant_transactions.csv') as tempFile:
+    tempReader = csv.reader(tempFile)
+    newMerchTrans = list(tempReader)
 
 
 # 
